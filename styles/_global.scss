@@ -10,6 +10,7 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  position: relative;
 }
 
 h1 {
@@ -47,7 +48,8 @@ a {
   color: $gray-text;
 }
 
-button {
+.btn {
+  text-transform: uppercase;
   padding: 2rem 6rem;
   background: #9c4195;
   border: none;
@@ -55,13 +57,13 @@ button {
   font-size: 1.8rem;
   cursor: pointer;
   transition: background 0.4s ease-in-out;
-}
 
-button:hover {
-  background: #81367b;
-}
+  &:hover {
+    background: #81367b;
+  }
 
-button:focus {
-  background: #63285e;
-  outline-style: solid;
+  &:focus {
+    background: #63285e;
+    outline-style: solid;
+  }
 }
