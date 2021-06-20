@@ -10,6 +10,6 @@ export default function popUp() {
 
     setTimeout(() => {
       popup.remove();
-    }, 4000);
+    }, 3000);
   }, 1500);
 }
