@@ -72,6 +72,7 @@ a {
 
 .hero {
   min-height: 100vh;
+  width: 100%;
   position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(transparent)), url("../img/background.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.3), transparent), url("../img/background.jpg");
@@ -109,12 +110,30 @@ a {
   position: fixed;
 }
 
+.hero .initial .btn {
+  margin-top: 3rem;
+}
+
 .hero .initial.hide {
   display: none;
 }
 
 .hero .second {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+}
+
+.hero .second img {
+  height: 24rem;
 }
 
 .hero .second.hide {
@@ -125,10 +144,8 @@ a {
   position: absolute;
   right: 4rem;
   bottom: 4rem;
+  display: none;
   background-color: sandybrown;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -166,6 +183,9 @@ a {
 }
 
 .popup-container.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-animation: popup-open 0.7s forwards;
           animation: popup-open 0.7s forwards;
 }
