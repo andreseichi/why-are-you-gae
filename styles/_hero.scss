@@ -42,9 +42,25 @@
     align-items: center;
     justify-content: center;
     width: 80%;
+    flex-wrap: wrap;
 
-    img {
+    .text {
+      width: 40%;
+      flex: 1 1 10rem;
+
+      .info {
+        // width: 80%;
+      }
+    }
+
+    .img-container {
       height: 24rem;
+      flex: 1 1 10rem;
+
+      img {
+        height: 100%;
+        box-shadow: 0 0 0 10px white;
+      }
     }
 
     &.hide {

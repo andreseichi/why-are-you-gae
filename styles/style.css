@@ -130,10 +130,28 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   width: 80%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.hero .second img {
+.hero .second .text {
+  width: 40%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+}
+
+.hero .second .img-container {
   height: 24rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+}
+
+.hero .second .img-container img {
+  height: 100%;
+  -webkit-box-shadow: 0 0 0 10px white;
+          box-shadow: 0 0 0 10px white;
 }
 
 .hero .second.hide {
