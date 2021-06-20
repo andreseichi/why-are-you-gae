@@ -16,6 +16,7 @@ $gray-text: #2c2c2c;
 
 @import 'global';
 @import 'hero';
+@import 'popup';
 
 // Mobile Tablet
 @media screen and (max-width: 1335px) {
@@ -23,9 +24,9 @@ $gray-text: #2c2c2c;
     font-size: 53%;
   }
 
-  svg {
-    width: 80%;
-  }
+  // svg {
+  //   width: 80%;
+  // }
 
   nav {
     width: 100%;
@@ -38,26 +39,26 @@ $gray-text: #2c2c2c;
     font-size: 45%;
   }
 
-  svg {
-    height: 60%;
-  }
+  // svg {
+  //   height: 60%;
+  // }
 
   .main-head {
     width: 100%;
   }
 
   nav {
-    margin: 2rem;
+    // margin: 2rem;
 
     .logo {
       @include flex(center, center, column);
       flex: 1 1 20rem;
-      margin-top: 2rem;
+      // margin-top: 2rem;
     }
 
     ul {
       flex: 1 1 60rem;
-      margin: 2rem 0rem;
+      // margin: 2rem 0rem;
     }
   }
 }

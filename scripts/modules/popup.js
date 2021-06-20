@@ -1,3 +1,3 @@
 export default function popUp() {
-  console.log('popup');
+  const html = document.documentElement;
 }

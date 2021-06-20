@@ -1,0 +1,52 @@
+.popup-container {
+  position: absolute;
+  right: 4rem;
+  bottom: 4rem;
+  background-color: sandybrown;
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  width: 40rem;
+  padding: 1rem 2.5rem 1rem 3rem;
+  border-radius: 5px;
+  overflow: hidden;
+
+  .icon {
+    height: 64px;
+    width: 64px;
+  }
+  .popup {
+    display: flex;
+    margin-left: 2rem;
+
+    .close {
+      position: absolute;
+      right: 10px;
+      top: 4px;
+      background: none;
+      border: none;
+      font-size: 3rem;
+      font-weight: bolder;
+      cursor: pointer;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  &.active {
+    animation: popup-open 0.7s forwards;
+  }
+}
+
+@keyframes popup-open {
+  from {
+    opacity: 0;
+    transform: translate3d(20px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
