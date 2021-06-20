@@ -2,8 +2,8 @@
   position: absolute;
   right: 4rem;
   bottom: 4rem;
+  display: none;
   background-color: sandybrown;
-  display: flex;
   align-items: center;
   // justify-content: center;
   width: 40rem;
@@ -36,6 +36,7 @@
   }
 
   &.active {
+    display: flex;
     animation: popup-open 0.7s forwards;
   }
 }
